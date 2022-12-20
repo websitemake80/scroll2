@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="magic.css">
+    <title>Scroll</title>
+</head>
+<body>
+   <section>
+    <div class="sec sec1"><h2>Scroll</h2></div>
+    
+
+    <h2>Scroll</h2>
+    <div class="arrow"> 
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+   </section> 
+   <script>
+    let sec1 = document.querySelector('.sec1');
+    
+    window.addEventListener('scroll', function(){
+ var value = window.scrollY;
+ sec1.style.clipPath = " circle("+value * 1+ "px at 50% 50%)";
+ 
+    })
+   </script>
+</body>
+
+</html>
